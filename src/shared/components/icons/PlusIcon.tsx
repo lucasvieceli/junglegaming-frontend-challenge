@@ -1,0 +1,23 @@
+import type { SVGProps } from 'react'
+
+export function PlusIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g>
+        <path
+          d="M7.33333 8.66667H3.33333V7.33333H7.33333V3.33333H8.66667V7.33333H12.6667V8.66667H8.66667V12.6667H7.33333V8.66667Z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  )
+}

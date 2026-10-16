@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testes e relatórios gerados
+test-results
+playwright-report
+.lighthouseci
+!.env.example
+
+# Variáveis locais (os defaults de src/app/env.ts permitem rodar sem .env; ver .env.example)
+.env
+.env.production
+
+# Local tooling
+.claude
+.tanstack
+reports/playwright
+
+.history

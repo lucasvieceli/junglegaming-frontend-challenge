@@ -1,0 +1,25 @@
+import type { SVGProps } from 'react'
+
+export function ChevronDownIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g>
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M15.4419 7.89139C15.686 8.13547 15.686 8.5312 15.4419 8.77527L10.4419 13.7753C10.1979 14.0194 9.80214 14.0194 9.55806 13.7753L4.55806 8.77527C4.31398 8.5312 4.31398 8.13547 4.55806 7.89139C4.80214 7.64731 5.19786 7.64731 5.44194 7.89139L10 12.4494L14.5581 7.89139C14.8021 7.64731 15.1979 7.64731 15.4419 7.89139Z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  )
+}

@@ -1,0 +1,179 @@
+@import 'tailwindcss' source('..');
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@import './fonts.css';
+@import './typography.css';
+
+@theme {
+  --color-ink: #140d0a;
+  --color-surface-card: #241612;
+  --color-surface-raised: #2f1d15;
+  --color-surface-dark: #38220f;
+  --color-line: #3f2319;
+  --color-line-soft: #55321f;
+  --color-primary: #d28a4c;
+  --color-secondary: #b39463;
+  --color-foreground: #f5f1eb;
+  --color-text-primary: #f7f3ec;
+  --color-text-secondary: #cfb28c;
+  --color-accent: #e89b55;
+  --color-coral: #f0805f;
+  --color-amber: #e3a44e;
+  --color-success: #00a66c;
+  --color-danger: #f0805f;
+  --color-featured-green: #46a358;
+
+  --color-background: #140d0a;
+  --color-card: #241612;
+  --color-card-foreground: #f5f1eb;
+  --color-popover: #241612;
+  --color-popover-foreground: #f5f1eb;
+  --color-primary-foreground: #140d0a;
+  --color-secondary-foreground: #f5f1eb;
+  --color-muted: #2f1d15;
+  --color-muted-foreground: #b39463;
+  --color-accent-foreground: #140d0a;
+  --color-destructive: #f0805f;
+  --color-border: #3f2319;
+  --color-input: #3f2319;
+  --color-ring: #e89b55;
+
+  --font-sans: 'Roboto Mono', 'Roboto Mono Fallback', ui-monospace, 'Courier New', monospace;
+  --font-mono: var(--font-sans);
+
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 14px;
+  --radius-2xl: 20px;
+  --radius-pill: 40px;
+
+  --shadow-card-mobile: 0 6px 20px rgba(10, 6, 4, 0.45);
+  --shadow-card-selected: 0 20px 20px rgba(10, 6, 4, 0.45);
+  --shadow-glow: 0 0 10px rgba(10, 6, 4, 0.45);
+  --shadow-stepper: 0 4px 6px rgba(20, 13, 10, 0.15);
+  --shadow-stepper-lg: 0 6.6px 9.9px rgba(20, 13, 10, 0.15);
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+}
+
+@utility bg-gradient-tile {
+  background-image: linear-gradient(139.5deg, #241612 12%, #2f1d15 106.6%);
+}
+@utility bg-gradient-cta {
+  background-image: linear-gradient(108.9deg, #d28a4c 4%, rgba(210, 138, 76, 0.8) 122%);
+}
+@utility bg-gradient-cta-buy {
+  background-image: linear-gradient(100.4deg, #d28a4c 4%, rgba(210, 138, 76, 0.8) 122%);
+}
+@utility bg-gradient-apply {
+  background-image: linear-gradient(96deg, rgba(210, 138, 76, 0.54) 1%, #d28a4c 105%);
+}
+@utility bg-gradient-filter-btn {
+  background-image: linear-gradient(137deg, rgba(210, 138, 76, 0.45) 24.6%, #d28a4c 100%);
+}
+@utility bg-gradient-featured {
+  background-image: linear-gradient(180deg, rgba(210, 138, 76, 0.1), rgba(210, 138, 76, 0.03));
+}
+
+@utility bg-gradient-orb {
+  background-image: linear-gradient(
+    145.46deg,
+    rgba(210, 138, 76, 0.3) 46.09%,
+    rgba(210, 138, 76, 0) 103.28%
+  );
+}
+@utility bg-gradient-hero-mobile {
+  background-image: linear-gradient(137.6deg, #241612 12%, #2f1d15 106.6%);
+}
+
+@utility hairline {
+  border-top: 1px solid rgba(210, 138, 76, 0.3);
+}
+@utility hairline-y {
+  border-left: 1px solid rgba(210, 138, 76, 0.3);
+}
+
+@utility skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: #2f1d15;
+  border-radius: var(--radius-md);
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(245, 241, 235, 0.08), transparent);
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html {
+    background: var(--color-ink);
+  }
+  body {
+    @apply bg-ink text-foreground font-sans antialiased;
+    /* Clip on body only: clipping html too keeps the modal scroll lock from reaching the viewport. */
+    overflow-x: clip;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+::view-transition-group(nft-artwork) {
+  animation-duration: 450ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+@keyframes heart-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

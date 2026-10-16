@@ -1,0 +1,33 @@
+import type { SVGProps } from 'react'
+
+export function ArrowDownLongIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="10.537"
+      height="12.75"
+      viewBox="0 0 10.537 12.75"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g>
+        <path
+          d="M5.26852 12V0.75"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9.78689 7.46227C9.78689 7.46227 7.34115 11.9998 5.26965 11.9998C3.19665 11.9998 0.750145 7.46227 0.750145 7.46227"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  )
+}

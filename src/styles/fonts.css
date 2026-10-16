@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/roboto-mono-latin-700-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Fallback';
+  src: local('Courier New');
+  size-adjust: 104%;
+  ascent-override: 102%;
+  descent-override: 26%;
+}

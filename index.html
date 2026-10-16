@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#140d0a" />
+    <meta
+      name="description"
+      content="Kurio — marketplace de NFTs. Descubra, colecione e compre arte digital de criadores emergentes e consagrados."
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/roboto-mono-latin-400-normal.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/roboto-mono-latin-500-normal.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/roboto-mono-latin-700-normal.woff2"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/decor/hero-mobile.svg"
+      media="(max-width: 1023px)"
+    />
+    <title>Kurio — Marketplace de NFTs</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #140d0a;
+      }
+      .boot-shell {
+        position: fixed;
+        top: 32px;
+        left: max(24px, calc(50vw - 600px));
+        color: #f5f1eb;
+        font:
+          700 14px/1 'Roboto Mono',
+          'Courier New',
+          monospace;
+        letter-spacing: 1.4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-shell" aria-hidden="true">KURIO</div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

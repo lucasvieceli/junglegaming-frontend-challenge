@@ -1,0 +1,20 @@
+import type { SVGProps } from 'react'
+
+export function MinusIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g>
+        <path d="M3.33333 8.66667V7.33333H12.6667V8.66667H3.33333Z" fill="currentColor" />
+      </g>
+    </svg>
+  )
+}

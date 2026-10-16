@@ -1,0 +1,74 @@
+[
+  {
+    "url": "http://localhost:4173/?scenario=default",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_58_52.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_58_52.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:4173/?scenario=default",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_59_06.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_59_06.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:4173/nfts/nft_emerald_ape_042?scenario=default",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_15_23_59_33.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_15_23_59_33.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:4173/nfts/nft_emerald_ape_042?scenario=default",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_16_00_00_00.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_16_00_00_00.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:4173/?scenario=default",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_59_20.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/-2026_10_15_23_59_20.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:4173/nfts/nft_emerald_ape_042?scenario=default",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_15_23_59_47.html",
+    "jsonPath": "/Users/lucasvieceli/Documents/projetos/junglegaming/reports/lighthouse/desktop/nfts_nft_emerald_ape_042-2026_10_15_23_59_47.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1
+    }
+  }
+]

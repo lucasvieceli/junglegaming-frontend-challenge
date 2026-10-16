@@ -1,0 +1,36 @@
+import type { Wallet } from '@/shared/contracts/wallet'
+
+export const WALLET_ROWS: Array<Omit<Wallet, 'createdAt' | 'updatedAt'>> = [
+  {
+    id: 'wal_ana_primary',
+    userId: 'usr_ana',
+    kind: 'primary',
+    displayName: 'Ana Sato',
+    alias: 'Principal',
+    profileName: 'ana.colecionadora',
+    network: 'ethereum',
+    address: '0xA91F3b8C9D2e4F5a6B7c8D9e0F1a2B3c4D5eE82C',
+    secondaryAddress: null,
+    type: 'metamask',
+    referralCode: 'KURIO-ANA',
+    email: 'ana@kurio.test',
+    ensName: 'nova',
+    sameAsPrimary: false,
+  },
+  {
+    id: 'wal_ana_secondary',
+    userId: 'usr_ana',
+    kind: 'secondary',
+    displayName: 'Ana Sato',
+    alias: 'Reserva',
+    profileName: 'nova.kurio',
+    network: 'polygon',
+    address: '0x5C2e8B1d7F4a9E3c6D0b2A8f1E7c4B9d3A6f2E10',
+    secondaryAddress: 'nova.kurio.eth',
+    type: 'walletconnect',
+    referralCode: 'KURIO-ANA',
+    email: 'ana@kurio.test',
+    ensName: 'nova',
+    sameAsPrimary: false,
+  },
+]
